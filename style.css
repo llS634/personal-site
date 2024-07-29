@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -41,8 +41,8 @@ body {
     font-weight: normal;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
-    color: #000000;
-    background: #ffffff;
+    color: #160D0A;
+    background: #F5F1E8;
 }
 
 html {
@@ -52,12 +52,25 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-  }
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #160D0A;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F1E8;
+}
 
 ::selection {
-    background: black;
-    color: white;
+    background: #160D0A;
+    color: #F5F1E8;
+}
+
+:root {
+    color-scheme: light dark;
 }
 
 /* Header ------------------------------------------------------------------------------------*/
@@ -75,12 +88,12 @@ html {
     position: relative; 
     height: 100%;
     width: 100%;
-    color: black;
+    color: #160D0A;
 }
 
 .nav-link:not(.disabled-link):hover {
-    border: 1px solid black; 
-    background-color: #ffffff;
+    border: 1px solid #160D0A;
+    background-color: #F5F1E8;
     transition: border 0.3s;
 }
 
@@ -113,23 +126,21 @@ html {
 
 #menu {
     height: 0;
-    background-color: #ffffff;
-    position: absolute; /* Changed from fixed to absolute */
+    background-color: #F5F1E8;
+    position: absolute;
     top: 100%;
     left: 0;
     overflow: hidden;
     transition: border 0.3s;
-    width: 100%; /* Ensure it covers the full width of its parent */
+    width: 100%;
 }
 
-/* Menu open state */
 #menu.open {
-    height: 1145%; /* Changed from 100% to auto to fit content */
-    color: #000000;
-    border: 1px solid black;
+    height: auto;
+    color: #160D0A;
+    border: 1px solid #160D0A;
 }
 
-/* Styles for menu links */
 .menu-link {
     cursor: pointer;
     padding: 20px;
@@ -137,20 +148,25 @@ html {
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid transparent; /* Add a transparent border initially */
+    border: 1px solid transparent;
 }
 
-/* Hover effect for menu links */
 .menu-link:hover {
-    border: 1px solid black;
+    border: 1px solid #160D0A;
     transition: border 0.3s;
 }
+
 /* Main-container-1 ------------------------------------------------------------------------------------*/
 .container-1 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding-top: 60px;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
+
 /* Main-container-2 ------------------------------------------------------------------------------------*/
 .container-2 {
     display: grid;
@@ -166,6 +182,13 @@ html {
     grid-template-columns: 1fr 1fr;
 }
 
+#art-for-introvert {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #160D0A;
+}
+
 /* Main-container-3 ------------------------------------------------------------------------------------*/
 .container-3 {
     display: grid;
@@ -176,8 +199,9 @@ html {
     display: flex;
     flex-direction: column;
     grid-column: 1/3;
-    border: 1px solid black;
+    border: 1px solid #160D0A;
     justify-content: space-between;
+    border-bottom: none;
 }
 
 .sidebar-info-1 {
@@ -203,22 +227,28 @@ html {
     text-transform: uppercase; 
 }
 
-.button-more {
-    width: 100%;    
-    height: 40px;
-    padding: 10px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    cursor: pointer;
+.arrow-button {
+    font-size: 24px;
     text-transform: uppercase;
     font-family: "Source Code Pro", monospace;
-    font-weight: normal;
+    border: none;         
+    background-color: #F5F1E8;
+    color: #160D0A;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: flex-end;
 }
 
-.button-more:not(.disabled-link):hover {
-    border: 1px solid black;
+.arrow-button:hover {
+    border-top: 1px solid #160D0A;
     transition: border 0.3s;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 24px;
 }
 
 .main-content {
@@ -232,13 +262,72 @@ html {
 
 .img-column {
     overflow: hidden;
-    border: 1px solid black;
+    border: 1px solid #160D0A;
+    border-bottom: none;
+    border-left: none;
 }
 
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Media color-scheme------------------------------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919;
+        color: #F5F1E8;
+    }
+
+    a {
+        color:  #F5F1E8;
+        border: #999691;
+    }
+
+    .nav-item {
+        color: #F5F1E8;
+    }
+    
+    .nav-link:not(.disabled-link):hover {
+        border: 1px solid #999691;
+        background-color: #191919;
+    }
+
+    #menu {
+        background-color: #191919;
+    }
+
+    #menu.open {
+        color: #191919;
+        border: 1px solid #999691;
+    }
+    
+    /* Hover effect for menu links */
+    .menu-link:hover {
+        border: 1px solid #999691;
+    }
+
+    .sidebar {
+        border: 1px solid #999691;
+    }
+
+    #art-for-introvert {
+        color: #CEFF5D;
+    }
+
+    .arrow-button {
+        background-color: #191919;
+        color: #F5F1E8;
+    }
+    
+    .arrow-button:hover {
+        border-top: 1px solid #999691;
+    }
+
+    .img-column {
+        border: 1px solid #999691;
+    }
 }
 
 /* Media------------------------------------------------------------------------------------*/
@@ -258,10 +347,17 @@ html {
     }
 }
 
-
 @media (max-width: 1080px) {
     .img-column {
         grid-column: 1/3;
+    }
+
+    .img-block {
+        grid-column: 1/3;
+    }
+
+    .sidebar {
+        border-bottom: none;
     }
 }
 
