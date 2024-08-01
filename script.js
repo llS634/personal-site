@@ -7,16 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.add('disabled-link');
             link.removeAttribute('target');
         } else {
-            // Add event listener for navigation without opening a new tab
             link.addEventListener('click', function(event) {
-                event.preventDefault();  // Prevent the default link behavior
-                window.location.href = this.getAttribute('href');  // Navigate to the specified URL
+                event.preventDefault();
+                window.location.href = this.getAttribute('href');
             });
         }
     });
 });
 
 document.getElementById('menuLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    document.getElementById('menu').classList.toggle('open'); // Toggle the 'open' class
+    event.preventDefault();
+    document.getElementById('menu').classList.toggle('open');
 });
