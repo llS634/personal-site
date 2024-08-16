@@ -11,7 +11,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
-    color: #000000;
+    color: #160D0A;
     text-transform: uppercase;
     font-family: "Source Code Pro", monospace;
 }
@@ -73,6 +73,11 @@ html {
     color-scheme: light dark;
 }
 
+video {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
@@ -312,7 +317,6 @@ html {
         border: 1px solid #999691;
     }
     
-    /* Hover effect for menu links */
     .menu-link:hover {
         border: 1px solid #999691;
     }
