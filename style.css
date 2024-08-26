@@ -42,7 +42,7 @@ body {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: #160D0A;
-    background: #F5F1E8;
+    background: rgb(255, 255, 255);
 }
 
 html {
@@ -61,12 +61,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #F5F1E8;
+    background: rgb(255, 255, 255);
 }
 
 ::selection {
-    background: #160D0A;
-    color: #F5F1E8;
+    background: rgb(255, 255, 255);
 }
 
 :root {
@@ -87,6 +86,8 @@ video {
     width: 100%;
     align-items: center;
     z-index: 6;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #160D0A;
 }
     
 .nav-item {
@@ -98,7 +99,8 @@ video {
 
 .nav-link:not(.disabled-link):hover {
     border: 1px solid #160D0A;
-    background-color: #F5F1E8;
+    border-top: none;
+    border-bottom: none;
     transition: border 0.3s;
 }
 
@@ -131,7 +133,7 @@ video {
 
 #menu {
     height: 0;
-    background-color: #F5F1E8;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 100%;
     left: 0;
@@ -158,9 +160,18 @@ video {
 
 .menu-link:hover {
     border: 1px solid #160D0A;
+    border-left: none;
+    border-right: none;
     transition: border 0.3s;
 }
 
+.menu-item:first-child .menu-link:hover {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.menu-item:last-child .menu-link:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
 /* Main-container-1 ------------------------------------------------------------------------------------*/
 .container-1 {
     display: grid;
@@ -210,7 +221,7 @@ video {
     grid-column: 1/3;
     border: 1px solid #160D0A;
     justify-content: space-between;
-    border-bottom: none;
+    border-top: none;
 }
 
 .sidebar-info-1 {
@@ -241,7 +252,7 @@ video {
     text-transform: uppercase;
     font-family: "Source Code Pro", monospace;
     border: none;         
-    background-color: #F5F1E8;
+    background-color: rgb(255, 255, 255);
     color: #160D0A;
     padding: 10px 20px;
     cursor: pointer;
@@ -272,7 +283,7 @@ video {
 .img-column {
     overflow: hidden;
     border: 1px solid #160D0A;
-    border-bottom: none;
+    border-top: none;
     border-left: none;
 }
 
@@ -284,9 +295,16 @@ video {
 
 /* Media color-scheme------------------------------------------------------------------------------------*/
 @media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-thumb {
+        background-color: #F5F1E8;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #160D0A;
+    }
+    
     ::selection {
-        background: #F5F1E8;
-        color: #160D0A;
+        background: #160D0A;
     }
 
     body {
@@ -299,6 +317,11 @@ video {
         border: #999691;
     }
 
+    .header {
+        background-color: #191919;
+        border-bottom: 1px solid #999691;
+    }
+
     .nav-item {
         color: #F5F1E8;
     }
@@ -306,6 +329,8 @@ video {
     .nav-link:not(.disabled-link):hover {
         border: 1px solid #999691;
         background-color: #191919;
+        border-top: none;
+        border-bottom: none;
     }
 
     #menu {
@@ -317,12 +342,22 @@ video {
         border: 1px solid #999691;
     }
     
+
     .menu-link:hover {
         border: 1px solid #999691;
+    }
+    
+    .menu-item:first-child .menu-link:hover {
+        border-top: 1px solid #191919;
+    }
+    
+    .menu-item:last-child .menu-link:hover {
+        border-bottom: 1px solid #191919;
     }
 
     .sidebar {
         border: 1px solid #999691;
+        border-top: none;
     }
 
     #art-for-introvert {
@@ -340,6 +375,8 @@ video {
 
     .img-column {
         border: 1px solid #999691;
+        border-top: none;
+        border-left: none;
     }
 }
 
@@ -367,10 +404,6 @@ video {
 
     .img-block {
         grid-column: 1/3;
-    }
-
-    .sidebar {
-        border-bottom: none;
     }
 }
 
