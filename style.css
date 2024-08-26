@@ -345,6 +345,9 @@ video {
 
     .menu-link:hover {
         border: 1px solid #999691;
+        border-left: none;
+        border-right: none;
+        transition: border 0.3s;
     }
     
     .menu-item:first-child .menu-link:hover {
