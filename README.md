@@ -1,7 +1,5 @@
-# Personal-site
-This will be my personal website with more details on design projects.
-
-I want to use it to practice writing code and understanding how to work with grids. Because I have big problems understanding how to work with it.
+# Personal Site
+This is my personal website with more details on design projects. And I use it to practice writing code and understanding how to work with grids.
 
 ![2024-08-26_14-10-11](https://github.com/user-attachments/assets/b58c2831-27fd-46ed-8b67-f697587c6a22)
 
