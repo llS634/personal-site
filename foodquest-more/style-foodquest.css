@@ -72,6 +72,12 @@ html {
     color-scheme: light dark;
 }
 
+video {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
@@ -315,6 +321,21 @@ html {
     color: #BD7AAD;
 }
 
+.video-background {
+    background-color: #181111;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
 /* Media color-scheme------------------------------------------------------------------------------------*/
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
@@ -425,6 +446,10 @@ html {
     .content-block-short-img {
         grid-template-columns: 1fr;
     }
+
+    .description-content-short-right {
+        grid-column: 1;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -444,4 +469,3 @@ html {
         border-top: 1px solid #160D0A;
     }
 }
-
