@@ -173,6 +173,14 @@ video {
 .menu-item:last-child .menu-link:hover {
     border-bottom: 1px solid #F9F9F7;
 }
+
+.menu {
+    display: none; /* Hide the menu by default */
+  }
+  
+  .menu.show {
+    display: block; /* Show the menu when the "show" class is added */
+  }
 /* Container-posters ------------------------------------------------------------------------------------*/
 .container-posters {
     display: grid;
