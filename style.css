@@ -202,13 +202,6 @@ video {
     grid-template-columns: 1fr 1fr;
 }
 
-#art-for-introvert {
-    font-weight: 600;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: #160D0A;
-}
-
 /* Container-foodquest ------------------------------------------------------------------------------------*/
 .container-foodquest {
     display: grid;
@@ -362,10 +355,6 @@ video {
     .sidebar {
         border: 1px solid #999691;
         border-top: none;
-    }
-
-    #art-for-introvert {
-        color: #CEFF5D;
     }
 
     .arrow-button {
