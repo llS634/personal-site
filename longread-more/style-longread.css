@@ -42,7 +42,7 @@ body {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: #160D0A;
-    background: #F5F1E8;
+    background: #F9F9F7;
 }
 
 html {
@@ -61,17 +61,23 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #F5F1E8;
+    background: #F9F9F7;
 }
 
 ::selection {
-    background: #160D0A;
-    color: #F5F1E8;
+    background: #999691;
 }
 
 :root {
     color-scheme: light dark;
 }
+
+video {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
@@ -81,6 +87,8 @@ html {
     width: 100%;
     align-items: center;
     z-index: 6;
+    background-color: #F9F9F7;
+    border-bottom: 1px solid #160D0A;
 }
     
 .nav-item {
@@ -92,7 +100,8 @@ html {
 
 .nav-link:not(.disabled-link):hover {
     border: 1px solid #160D0A;
-    background-color: #F5F1E8;
+    border-top: none;
+    border-bottom: none;
     transition: border 0.3s;
 }
 
@@ -125,7 +134,7 @@ html {
 
 #menu {
     height: 0;
-    background-color: #F5F1E8;
+    background-color: #F9F9F7;
     position: absolute;
     top: 100%;
     left: 0;
@@ -152,7 +161,17 @@ html {
 
 .menu-link:hover {
     border: 1px solid #160D0A;
+    border-left: none;
+    border-right: none;
     transition: border 0.3s;
+}
+
+.menu-item:first-child .menu-link:hover {
+    border-top: 1px solid #F9F9F7;
+}
+
+.menu-item:last-child .menu-link:hover {
+    border-bottom: 1px solid #F9F9F7;
 }
 
 /* Header ------------------------------------------------------------------------------------*/
@@ -172,9 +191,10 @@ html {
 .sidebar-block {
     display: flex;
     flex-direction: column;
-    border: 1px solid #160D0A;
     border-right: none;
     grid-column: 1/3;
+    border: 1px solid #160D0A;
+    border-top: none;
 }
 
 .sidebar-info {
@@ -201,13 +221,14 @@ html {
     text-transform: uppercase;
     font-family: "Source Code Pro", monospace;
     border: none;         
-    background-color: #F5F1E8;
+    background-color: #F9F9F7;
     color: #160D0A;
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
     border: 1px solid transparent;
     justify-content: flex-start;
+    animation: none;
 }
 
 .arrow-button:hover {
@@ -220,37 +241,177 @@ html {
     font-size: 24px;
 }
 
+/* Main ------------------------------------------------------------------------------------*/
 .main-content {
     grid-column: 3/7;
+    z-index: 5;
+    background-color: #F9F9F7;
+    color: #191919;
 }
 
-.content-block {
+.content-border {
+    border-bottom: 1px solid #160D0A;
+    border-right: 1px solid #160D0A;
+}
+
+.content-block-short-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-right: 1px solid #160D0A;
 }
 
-.content {
-    overflow: hidden;
-    border: 1px solid #160D0A;
-    border-bottom: none;
-    border-right: none;
+.text-block {
+    padding-bottom: 80px;
 }
 
-.content-block-1 {
-    overflow: hidden;
-    border-right: 1px solid #160D0A;
-    
+.content-block-short {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.description-main {
+.description-content-short {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.description-content-short-right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    grid-column: 2/2;
+}
+
+.description-content {
     padding: 20px;
 }
 
-.image {
+#img-visibility {
+    display: block;
+}
+
+.content-img {
+    max-width: 100%;
+    height: auto; 
+    overflow: hidden;
+    position: relative;
+}
+
+.content-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+
+.content-img-short {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #160D0A;
+}
+
+.content-img-short img {
+    width: 100%;
+    height: 100%;
+}
+
+#art-for-introvert {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #160D0A;
+}
+
+/* Media color-scheme------------------------------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-thumb {
+        background-color: #F5F1E8;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #191919;
+    }
+    
+    ::selection {
+        background: #999691;
+    }
+
+    body {
+        background-color: #191919;
+        color: #F5F1E8;
+    }
+
+    a {
+        color:  #F5F1E8;
+        border: #999691;
+    }
+
+    .header {
+        background-color: #191919;
+        border-bottom: 1px solid #999691;
+    }
+
+    .nav-item {
+        color: #F5F1E8;
+    }
+    
+    .nav-link:not(.disabled-link):hover {
+        border: 1px solid #999691;
+        background-color: #191919;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #menu {
+        background-color: #191919;
+    }
+
+    #menu.open {
+        color: #191919;
+        border: 1px solid #999691;
+    }
+    
+
+    .menu-link:hover {
+        border: 1px solid #999691;
+        border-left: none;
+        border-right: none;
+        transition: border 0.3s;
+    }
+    
+    .menu-item:first-child .menu-link:hover {
+        border-top: 1px solid #191919;
+    }
+    
+    .menu-item:last-child .menu-link:hover {
+        border-bottom: 1px solid #191919;
+    }
+
+    .sidebar-block {
+        border: 1px solid #999691;
+        border-top: none;
+    }
+
+    .arrow-button {
+        background-color: #191919;
+        color: #F5F1E8;
+    }
+    
+    .arrow-button:hover {
+        border-bottom: 1px solid #999691;
+    }
+
+    .main-content {
+        background-color: #F5F1E8;
+    }
+
+    .content-border {
+        border-bottom: 1px solid #999691;
+        border-right: 1px solid #999691;
+    }
+    
+    #art-for-introvert {
+        color: #7DB100;
+    }
 }
 
 /* Media------------------------------------------------------------------------------------*/
@@ -261,6 +422,18 @@ html {
 
     .content {
         grid-column: 1/7;
+    }
+
+    .content-block-short {
+        grid-template-columns: 1fr;
+    }
+
+    #img-visibility {
+        display: none;
+    }
+
+    .content-block-short-img {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -278,5 +451,6 @@ html {
 
     .main-content {
         grid-column: 1/7;
+        border-top: 1px solid #160D0A;
     }
 }
