@@ -19,3 +19,12 @@ document.getElementById('menuLink').addEventListener('click', function(event) {
     event.preventDefault();
     document.getElementById('menu').classList.toggle('open');
 });
+
+
+document.querySelectorAll('.contact-button').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
+    });
+  });
