@@ -315,10 +315,15 @@ video {
 }
 
 #asset-link {
-    color: #CE131A;
     font-weight: 600;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
+    color: #160D0A;
+}
+
+#asset-link:hover {
+    color: #999691;
+    transition: border 0.3s;
 }
 
 /* Media color-scheme------------------------------------------------------------------------------------*/
