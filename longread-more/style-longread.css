@@ -321,6 +321,11 @@ video {
     color: #160D0A;
 }
 
+#art-for-introvert:hover {
+    color: #999691;
+    transition: border 0.3s;
+}
+
 /* Media color-scheme------------------------------------------------------------------------------------*/
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
@@ -407,10 +412,6 @@ video {
     .content-border {
         border-bottom: 1px solid #999691;
         border-right: 1px solid #999691;
-    }
-    
-    #art-for-introvert {
-        color: #7DB100;
     }
 }
 
