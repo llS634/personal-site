@@ -175,12 +175,13 @@ video {
 }
 
 .menu {
-    display: none; /* Hide the menu by default */
-  }
+    display: none;
+}
   
-  .menu.show {
-    display: block; /* Show the menu when the "show" class is added */
-  }
+.menu.show {
+    display: block;
+}
+
 /* Container-posters ------------------------------------------------------------------------------------*/
 .container-posters {
     display: grid;
@@ -261,6 +262,7 @@ video {
     display: flex;
     border: 1px solid transparent;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .arrow-button:hover {
@@ -269,7 +271,7 @@ video {
 }
 
 .arrow {
-    display: inline-block;
+    display: flex;
     font-size: 24px;
 }
 

@@ -318,7 +318,12 @@ video {
     font-weight: 600;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
-    color: #BD7AAD;
+    color: #160D0A;
+}
+
+#repository:hover {
+    color: #999691;
+    transition: border 0.3s;
 }
 
 .video-background {
