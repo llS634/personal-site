@@ -216,7 +216,7 @@ video {
     text-transform: uppercase; 
 }
 
-.arrow-button {
+.arrow-back {
     font-size: 24px;
     text-transform: uppercase;
     font-family: "Source Code Pro", monospace;
@@ -231,7 +231,7 @@ video {
     animation: none;
 }
 
-.arrow-button:hover {
+.arrow-back:hover {
     border-bottom: 1px solid #160D0A;
     transition: border 0.3s;
 }
@@ -396,12 +396,12 @@ video {
         border-top: none;
     }
 
-    .arrow-button {
+    .arrow-back {
         background-color: #191919;
         color: #F5F1E8;
     }
     
-    .arrow-button:hover {
+    .arrow-back:hover {
         border-bottom: 1px solid #999691;
     }
 
