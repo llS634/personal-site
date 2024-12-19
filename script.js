@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
             link.removeAttribute('target');
         } else {
             link.addEventListener('click', function(event) {
+                if (this.target === '_blank') {
+                    return;
+                }
                 event.preventDefault();
                 window.location.href = this.getAttribute('href');
             });
