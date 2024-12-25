@@ -90,7 +90,15 @@ video {
     background-color: #F9F9F7;
     border-bottom: 1px solid #160D0A;
 }
-    
+
+.logo {
+    pointer-events: none;
+}
+
+.logo>a {
+    color: grey;
+}
+
 .nav-item {
     position: relative; 
     height: 100%;
