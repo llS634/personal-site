@@ -19,8 +19,24 @@
 
 <body>
     <header class="header">
+        <div class="language-switcher">
+            <div class="lang-click">
+                <a id="eng-link" rel="alternate" hreflang="en" href="index-foodquest.html">Eng</a>
+                <a id="ru-link" rel="alternate" hreflang="ru" href="index-foodquest-ru.html">Ru</a>
+            </div>
+        </div>
+
         <nav class="nav">
-            <ul class="nav-list">
+            <button class="burger-menu" id="burgerMenu" title="Burger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-list" id="navList">
                 <li class="logo nav-item">
                     <a href="" class="nav-link" data-page="">Елизавета Сашенкова</a>
                 </li>
@@ -30,12 +46,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../assets/cv/Елизавета Сашенкова-UX-UI Designer-Резюме.pdf" class="nav-link" target="_blank">Резюме</a>
+                    <a href="assets/cv/Елизавета Сашенкова-UX-UI Designer-Резюме.pdf" class="nav-link" target="_blank">Резюме</a>
                 </li>
 
                 <li class="nav-item">
                     <a href="javascript:void(0);" id="menuLink" class="contact-button nav-link">Контакты</a>
-
                     <div id="menu">
                         <ul class="menu-block">
                             <li class="menu-item">
@@ -62,7 +77,11 @@
             <div class="sidebar">
                 <div class="sidebar-block">
                     <a class="arrow-back" href="../index-ru.html">
-                        <span class="arrow">&larr;</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
                     </a>
             
                     <div class="sidebar-info">
@@ -107,11 +126,11 @@
                 <div class="content-border">
                     <div class="content-block-short-img">
                         <div id="img-visibility" class="content-img">
-                            <img src="assets/img/cover-1.png" alt="Левая часть обложки с персонажами приложения">
+                            <img src="assets/img/cover-1.webp" alt="Левая часть обложки с персонажами приложения">
                         </div>
 
                         <div class="content-img">
-                            <img src="assets/img/cover-2.png" alt="Правая часть обложки с персонажами приложения">
+                            <img src="assets/img/cover-2.webp" alt="Правая часть обложки с персонажами приложения">
                         </div>
                     </div>
                 </div>
@@ -134,7 +153,7 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/jtbd-ru.png" alt="Исследование пользователя">
+                        <img src="assets/img/jtbd-ru.webp" alt="Исследование пользователя">
                     </div>
                 </div>
 
@@ -161,7 +180,7 @@
                 <div class="content-border">
                     <div class="content-block-long">
                         <div class="content-img">
-                            <img src="assets/img/reference.png" alt="Референс">
+                            <img src="assets/img/reference.webp" alt="Референс">
                         </div>
                     </div>
                 </div>
@@ -184,7 +203,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short-right">
                                 <div class="content-img-short">
-                                    <img src="assets/img/fonts-colors.png" alt="Шрифты и цвета">
+                                    <img src="assets/img/fonts-colors.webp" alt="Шрифты и цвета">
                                 </div>
                             </div>
                         </div>
@@ -200,7 +219,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short">
                                 <div class="content-img-short">
-                                    <img src="assets/img/logo.png" alt="Логотип">
+                                    <img src="assets/img/logo.webp" alt="Логотип">
                                 </div>
                             </div>
                         </div>
@@ -215,7 +234,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short-right">
                                 <div class="content-img-short">
-                                    <img src="assets/img/characters.png" alt="Персонажи">
+                                    <img src="assets/img/characters.webp" alt="Персонажи">
                                 </div>
                             </div>
                         </div>
@@ -224,11 +243,11 @@
                 <div class="content-border">
                     <div class="content-block-short-img">
                         <div id="img-visibility" class="content-img">
-                            <img src="assets/img/cover-identity-1.png" alt="Левая часть обложки с персонажами">
+                            <img src="assets/img/cover-identity-1.webp" alt="Левая часть обложки с персонажами">
                         </div>
 
                         <div class="content-img">
-                            <img src="assets/img/cover-identity-2.png" alt="Правая часть обложки с персонажами">
+                            <img src="assets/img/cover-identity-2.webp" alt="Правая часть обложки с персонажами">
                         </div>
                     </div>
                 </div>
@@ -251,7 +270,7 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/user-flow.png" alt="Путь пользователя">
+                        <img src="assets/img/user-flow.webp" alt="Путь пользователя">
                     </div>
                 </div>
 
@@ -273,7 +292,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short-right">
                                 <div class="content-img-short">
-                                    <img src="assets/img/color-options.png" alt="Цветовые варианты тем">
+                                    <img src="assets/img/color-options.webp" alt="Цветовые варианты тем">
                                 </div>
                             </div>
                         </div>
@@ -281,11 +300,11 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/wirframes-app.png" alt="Варфреймы экранов приложения">
+                        <img src="assets/img/wirframes-app.webp" alt="Варфреймы экранов приложения">
                     </div>
 
                     <div class="content-img">
-                        <img src="assets/img/ui-app.png" alt="UI экраны приложения">
+                        <img src="assets/img/ui-app.webp" alt="UI экраны приложения">
                     </div>
                 </div>
 
@@ -308,7 +327,7 @@
                             <div class="description-content-short-right">
                                 <div class="video-background content-block">
                                     <div class="video-container img-column img-width">
-                                        <video id="myVideo" controls loop style="width: 100%;">
+                                        <video id="myVideo" controls loop style="width: 100%;" preload="auto">
                                             <source src="assets/video/web-adaptive.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -320,7 +339,7 @@
 
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/dekstop.png" alt="Cover with the app's mascots">
+                        <img src="assets/img/dekstop.webp" alt="Cover with the app's mascots">
                     </div>
                 </div>
             </div>
