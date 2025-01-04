@@ -19,8 +19,24 @@
 
 <body>
     <header class="header">
+        <div class="language-switcher">
+            <div class="lang-click">
+                <a id="eng-link" rel="alternate" hreflang="en" href="index-longread.html">Eng</a>
+                <a id="ru-link" rel="alternate" hreflang="ru" href="index-longread-ru.html">Ru</a>
+            </div>
+        </div>
+
         <nav class="nav">
-            <ul class="nav-list">
+            <button class="burger-menu" id="burgerMenu" title="Burger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-list" id="navList">
                 <li class="logo nav-item">
                     <a href="" class="nav-link" data-page="">Elizaveta Sashenkova</a>
                 </li>
@@ -30,12 +46,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../assets/cv/Elizaveta-Sashenkova-UX-UI-Designer-CV.pdf" class="nav-link" target="_blank">CV</a>
+                    <a href="assets/cv/Elizaveta-Sashenkova-UX-UI-Designer-CV.pdf" class="nav-link" target="_blank">CV</a>
                 </li>
-
+                
                 <li class="nav-item">
                     <a href="javascript:void(0);" id="menuLink" class="contact-button nav-link">Contacts</a>
-
                     <div id="menu">
                         <ul class="menu-block">
                             <li class="menu-item">
@@ -62,7 +77,11 @@
             <div class="sidebar">
                 <div class="sidebar-block">
                     <a class="arrow-back" href="../index.html">
-                        <span class="arrow">&larr;</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
                     </a>
             
                     <div class="sidebar-info">
@@ -95,7 +114,7 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/cover.png" alt="A alien medieval">
+                        <img src="assets/img/cover.webp" alt="A alien medieval">
                     </div>
                 </div>
 
@@ -117,7 +136,7 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/longread-structure.png" alt="A longread structure">
+                        <img src="assets/img/longread-structure.webp" alt="A longread structure">
                     </div>
                 </div>
 
@@ -144,7 +163,7 @@
                 <div class="content-border">
                     <div class="content-block-long">
                         <div class="content-img">
-                            <img src="assets/img/references.png" alt="A references for the concept">
+                            <img src="assets/img/references.webp" alt="A references for the concept">
                         </div>
                     </div>
                 </div>
@@ -167,7 +186,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short-right">
                                 <div class="content-img-short">
-                                    <img src="assets/img/fonts.png" alt="Fonts">
+                                    <img src="assets/img/fonts.webp" alt="Fonts">
                                 </div>
                             </div>
                         </div>
@@ -183,7 +202,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short">
                                 <div class="content-img-short">
-                                    <img src="assets/img/grids-color-elements.png" alt="Colors and grid">
+                                    <img src="assets/img/grids-color-elements.webp" alt="Colors and grid">
                                 </div>
                             </div>
                         </div>
@@ -198,7 +217,7 @@
                         <div class="content-block-short">
                             <div class="description-content-short-right">
                                 <div class="content-img-short">
-                                    <img src="assets/img/character-alien.png" alt="A character in Spline">
+                                    <img src="assets/img/character-alien.webp" alt="A character in Spline">
                                 </div>
                             </div>
                         </div>
@@ -207,7 +226,7 @@
                 <div class="content-border">
                     <div class="content-block">
                         <div class="img-column img-width">
-                            <video id="myVideo" controls loop style="width: 100%;">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
                                 <source src="assets/video/3d-character.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -216,7 +235,7 @@
                 <div class="content-border">
                     <div class="content-block">
                         <div class="img-column img-width">
-                            <video id="myVideo" controls loop style="width: 100%;">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
                                 <source src="assets/video/animated-first-screen.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -241,7 +260,7 @@
                 <div class="content-border">
                     <div class="content-block">
                         <div class="img-column img-width">
-                            <video id="myVideo" controls loop style="width: 100%;">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
                                 <source src="assets/video/image-adaptive.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -249,7 +268,7 @@
                 </div>
                 <div class="content-border">
                     <div class="content-img">
-                        <img src="assets/img/finished-longread.jpg" alt="Ready-made long-read">
+                        <img src="assets/img/finished-longread.webp" alt="Ready-made long-read">
                     </div>
                 </div>
             </div>
