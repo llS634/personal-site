@@ -19,8 +19,24 @@
 
 <body>
     <header class="header">
+        <div class="language-switcher">
+            <div class="lang-click">
+                <a id="eng-link" rel="alternate" hreflang="en" href="index.html">Eng</a>
+                <a id="ru-link" rel="alternate" hreflang="ru" href="index-ru.html">Ru</a>
+            </div>
+        </div>
+
         <nav class="nav">
-            <ul class="nav-list">
+            <button class="burger-menu" id="burgerMenu" title="Burger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-list" id="navList">
                 <li class="logo nav-item">
                     <a href="" class="nav-link" data-page="">Елизавета Сашенкова</a>
                 </li>
@@ -35,7 +51,6 @@
 
                 <li class="nav-item">
                     <a href="javascript:void(0);" id="menuLink" class="contact-button nav-link">Контакты</a>
-
                     <div id="menu">
                         <ul class="menu-block">
                             <li class="menu-item">
@@ -72,25 +87,30 @@
                 </div>
 
                 <a href="foodquest-more/index-foodquest-ru.html" class="arrow-button">
-                    <span class="arrow">Подробнее &rarr;</span>
+                    <div class="arrow">Подробнее</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </a>
             </div>
             <div class="main-content">
                 <div class="content-block">
                     <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-1.png" alt="Экраны приложения">
+                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-1.webp" alt="Экраны приложения">
                     </div>
 
                     <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-2.png" alt="Уведомления приложения">
+                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-2.webp" alt="Уведомления приложения">
                     </div>
 
                     <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-3.png" alt="Лендинг">
+                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-3.webp" alt="Лендинг">
                     </div>
 
                     <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-4.png" alt="Персонажи приложения">
+                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-4.webp" alt="Персонажи приложения">
                     </div>
                 </div>
             </div>
@@ -109,13 +129,18 @@
                 </div>
 
                 <a href="posters-more/index-posters-ru.html" class="arrow-button">
-                    <span class="arrow">Подробнее &rarr;</span>
+                    <div class="arrow">Подробнее</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </a>
             </div>
             <div class="main-content">
                 <div class="content-block">
                     <div class="img-column img-width">
-                        <video id="myVideo" controls loop style="width: 100%;">
+                        <video id="myVideo" controls loop style="width: 100%;" preload="auto">
                             <source src="assets/page-main/video/Animation-animatrix.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -136,36 +161,33 @@
                 </div>
 
                 <a href="longread-more/index-longread-ru.html" class="arrow-button">
-                    <span class="arrow">Подробнее &rarr;</span>
+                    <div class="arrow">Подробнее</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </a>
             </div>
             <div class="main-content">
                 <div class="content-block-guide">
                     <div class="img-block">
                         <div class="img-column">
-                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-1.png" alt="Обложка с 3D персонажем">
+                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-1.webp" alt="Обложка с 3D персонажем">
                         </div>
 
                         <div class="img-column">
-                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-2.png" alt="Вариации 3D инопланетянина">
+                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-2.webp" alt="Вариации 3D инопланетянина">
                         </div>
                     </div>
 
                     <div class="img-column img-height">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-3.png" alt="Лонгрид">
+                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-3.webp" alt="Лонгрид">
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <div class="language-switcher">
-            <div class="lang-click">
-            <a rel="alternate" hreflang="en" href="index.html">Eng</a><a rel="alternate" hreflang="ru" href="index-ru.html">Ru</a>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
