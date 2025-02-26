@@ -286,6 +286,19 @@ video {
     margin: 20px;
 }
 
+#foodquest {
+    margin-bottom: 20px;
+    font-size: 42px;  
+    line-height: 110%;
+    font-weight: 500;
+    font-family: "Source Code Pro", monospace;
+}
+
+#foodquest:hover {
+    color: #999691;
+    transition: border 0.3s;
+}
+
 .title {
     margin-bottom: 20px;
     font-size: 42px;  
