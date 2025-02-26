@@ -265,6 +265,19 @@ video {
     line-height: 110%;
 }
 
+#foodquest {
+    margin-bottom: 20px;
+    font-size: 42px;  
+    line-height: 110%;
+    font-weight: 500;
+    font-family: "Source Code Pro", monospace;
+}
+
+#foodquest:hover {
+    color: #999691;
+    transition: border 0.3s;
+}
+
 .description {
     margin-bottom: 60px;
     line-height: 150%;
@@ -372,14 +385,14 @@ video {
     height: 100%;
 }
 
-#repository {
+#framer {
     font-weight: 600;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: #160D0A;
 }
 
-#repository:hover {
+#framer:hover {
     color: #999691;
     transition: border 0.3s;
 }
@@ -397,6 +410,15 @@ video {
 .video-container video {
     width: 100%;
     height: auto;
+}
+
+#link-more {
+    color: #160D0A;
+}
+
+#link-more:hover {
+    color: #999691;
+    transition: border 0.3s;
 }
 
 /* Media------------------------------------------------------------------------------------*/
