@@ -78,6 +78,14 @@ video {
     display: block;
 }
 
+.logo {
+    pointer-events: none;
+}
+
+.logo>a {
+    color: grey;
+}
+
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
@@ -86,7 +94,7 @@ video {
     height: 60px;
     width: 100%;
     align-items: center;
-    z-index: 6;
+    z-index: 7;
     background-color: #F9F9F7;
     border-bottom: 1px solid #160D0A;
 }
@@ -125,14 +133,6 @@ video {
     height: 100%;
 }
 
-.logo {
-    pointer-events: none;
-}
-
-.logo>a {
-    color: grey;
-}
-
 .nav-item {
     position: relative; 
     height: 100%;
@@ -141,7 +141,7 @@ video {
 }
 
 .nav-link:not(.disabled-link):hover {
-    border: 1px solid #160D0A;
+    outline: 1px solid #160D0A;
     border-top: none;
     border-bottom: none;
     transition: border 0.3s;
@@ -247,6 +247,16 @@ video {
     grid-column: span 2;
 }
 
+/* Container-max ------------------------------------------------------------------------------------*/
+.container-max {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
 /* Container-longread ------------------------------------------------------------------------------------*/
 .container-longread {
     display: grid;
@@ -287,6 +297,7 @@ video {
 }
 
 #foodquest {
+    color: #160D0A;
     margin-bottom: 20px;
     font-size: 42px;  
     line-height: 110%;
@@ -473,7 +484,7 @@ video {
     }
     
     .nav-link:not(.disabled-link):hover {
-        border: 1px solid #999691;
+        outline: 1px solid #999691;
         background-color: #191919;
         border-top: none;
         border-bottom: none;
@@ -527,6 +538,10 @@ video {
         background-color: #191919;
         border-top: none;
         border-bottom: none;
+    }
+
+    #foodquest {
+    color: #F5F1E8;
     }
 
     @media (max-width: 690px) {
