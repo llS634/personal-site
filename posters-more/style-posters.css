@@ -141,7 +141,7 @@ video {
 }
 
 .nav-link:not(.disabled-link):hover {
-    border: 1px solid #160D0A;
+    outline: 1px solid #160D0A;
     border-top: none;
     border-bottom: none;
     transition: border 0.3s;
@@ -509,7 +509,7 @@ video {
     }
     
     .nav-link:not(.disabled-link):hover {
-        border: 1px solid #999691;
+        outline: 1px solid #999691;
         background-color: #191919;
         border-top: none;
         border-bottom: none;
