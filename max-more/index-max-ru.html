@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Project Process</title>
+    <link rel="stylesheet" href="style-max.css">
+
+    <link rel="icon" href="..//assets/ico/icon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="language-switcher">
+            <div class="lang-click">
+                <a id="eng-link" rel="alternate" hreflang="en" href="index-max.html">Eng</a>
+                <a id="ru-link" rel="alternate" hreflang="ru" href="index-max-ru.html">Ru</a>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <button class="burger-menu" id="burgerMenu" title="Burger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-list" id="navList">
+                <li class="logo nav-item">
+                    <a href="" class="nav-link" data-page="">Елизавета Сашенкова</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../index-ru.html" class="nav-link" data-page="index-ru.html">Проекты</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="assets/cv/UI-UX-Designer-Елизавета-Сашенкова-Резюме.pdf" class="nav-link" target="_blank">Резюме</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="javascript:void(0);" id="menuLink" class="contact-button nav-link">Контакты</a>
+                    <div id="menu">
+                        <ul class="menu-block">
+                            <li class="menu-item">
+                                <a href="mailto:elisa.sashenkova@gmail.com" class="menu-link" target="_blank">Почта</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://www.linkedin.com/in/elisash/" class="menu-link" target="_blank">Linkedin</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://dprofile.ru/elissash" class="menu-link" target="_blank">Dprofile</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://github.com/llS634" class="menu-link" target="_blank">Github</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-block">
+                    <a class="arrow-back" href="../index-ru.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </a>
+            
+                    <div class="sidebar-info">
+                        <h1 class="title">MAX</h1>
+                        <p class="description">Брендинг для нового жилого комплекса в Тюмени. ЖК озданный в результате сотрудничества двух ведущих девелоперских компаний — "Точно" и "Творчество".</p>
+
+                        <div class="tag-block">
+                            <p class="tag">Брендинг</p>
+                        </div>         
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <! -- Part with About -- > 
+                <div class="content-border">
+                    <div class="text-block">
+                        <div class="content-block-long">
+                            <div class="description-content">
+                                <h2 class="description-main">О проекте</h2>
+                            </div>
+                        </div>
+
+                        <div class="content-block-short">
+                            <div class="description-content-short">
+                               <p class="description-main">MAX — новый жилой комплекс комфорт-класса в Тюмени, результат коллаборации двух ведущих девелоперов: «Точно» и «Творчество».</p>
+                            </div>
+                        </div>
+
+                        <div class="content-block-short">
+                            <div class="description-content-short">
+                               <p class="description-main">Квартал MAX создан для максималистов — для тех, кто стремится к большему, кто живёт ярко и хочет максимум от жизни. Это стало основой слогана «Зажги жизнь на MAX» и метафоры искры: из маленькой искры рождается фейерверк ощущений.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-block">
+                        <div class="img-column img-width">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
+                                <source src="assets/video/logo-color.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-block">
+                        <div class="img-column img-width">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
+                                <source src="assets/video/logo-spark.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-block">
+                        <div class="img-column img-width">
+                            <video id="myVideo" controls loop style="width: 100%;" preload="auto">
+                                <source src="assets/video/elements.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-img">
+                        <img src="assets/img/billboard.jpg" alt="Мокап биллборда">
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-img">
+                        <img src="assets/img/instagram.jpg" alt="Фотостиль для социальных сетей">
+                    </div>
+                </div>
+                <div class="content-border">
+                    <div class="content-img">
+                        <img src="assets/img/mockup.jpg" alt="Мокап часов">
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
