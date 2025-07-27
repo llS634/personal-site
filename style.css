@@ -51,6 +51,10 @@ html {
     scroll-behavior: smooth; 
 }
 
+main {
+    padding-top: 60px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -84,6 +88,20 @@ video {
 
 .logo>a {
     color: grey;
+}
+
+.no-click-button {
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Source Code Pro", monospace;        
+    background-color: #F9F9F7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Header ------------------------------------------------------------------------------------*/
@@ -234,7 +252,7 @@ video {
 }
 
 /* Container-posters ------------------------------------------------------------------------------------*/
-.container-posters {
+.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     hyphens: auto;
@@ -247,22 +265,7 @@ video {
     grid-column: span 2;
 }
 
-/* Container-max ------------------------------------------------------------------------------------*/
-.container-max {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    hyphens: auto;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
 /* Container-longread ------------------------------------------------------------------------------------*/
-.container-longread {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-
 .img-height {
     grid-row: span 2;
 }
@@ -273,12 +276,6 @@ video {
 }
 
 /* Container-foodquest ------------------------------------------------------------------------------------*/
-.container-foodquest {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding-top: 60px;
-}
-
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -472,6 +469,10 @@ video {
     a {
         color:  #F5F1E8;
         border: #999691;
+    }
+
+    .no-click-button {    
+    background-color: #191919;
     }
 
     .header {
