@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal website Elizaveta Sashenkova</title>
+    <title>Portfolio Elizaveta Sashenkova</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="assets/ico/icon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +19,26 @@
 
 <body>
     <header class="header">
+        <div class="language-switcher">
+            <div class="lang-click">
+                <a id="eng-link" rel="alternate" hreflang="en" href="index.html">Eng</a>
+                <a id="ru-link" rel="alternate" hreflang="ru" href="index-ru.html">Ru</a>
+            </div>
+        </div>
+
         <nav class="nav">
-            <ul class="nav-list">
+            <button class="burger-menu" id="burgerMenu" title="Burger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-list" id="navList">
                 <li class="logo nav-item">
-                    <a href="" class="nav-link" data-page="">Elizaveta Sashenkova</a>
+                    <a href="page-about/index-about.html" class="nav-link" data-page="">Elizaveta Sashenkova</a>
                 </li>
 
                 <li class="nav-item">
@@ -28,12 +46,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="assets/cv/Elizaveta-Sashenkova-UX-UI-Designer-CV.pdf" class="nav-link" target="_blank">CV</a>
+                    <a href="assets/cv/UI-UX-Designer-Elizaveta-Sashenkova-CV.pdf" class="nav-link" target="_blank">CV</a>
                 </li>
-
+                
                 <li class="nav-item">
                     <a href="javascript:void(0);" id="menuLink" class="contact-button nav-link">Contacts</a>
-
                     <div id="menu">
                         <ul class="menu-block">
                             <li class="menu-item">
@@ -56,101 +73,162 @@
     </header>
 
     <main>
-        <div class="container-foodquest">
+        <div class="container kan-truckt">
             <div class="sidebar">
                 <div class="sidebar-info-1">
-                    <h1 class="title">Foodquest</h1>
-                    <p class="description">The app that helps users find friendship and embark on gastronomic adventures.</p>
+                    <a href="" id="">
+                        <h1 class="title">Kan Truckt</h1>
+                    </a>
+                    <p class="description">Development of brand positioning and website for a logistics company.</p>
 
                     <div class="tag-block">
-                        <p class="tag">UX/UI App</p>
-                        <p class="tag">Brand Identity</p>
-                        <p class="tag">Landing page</p>
+                        <p class="tag">Branding</p>
+                        <p class="tag">UI/UX</p>
+                        <p class="tag">Web</p>
                     </div>                    
                 </div>
 
-                <a href="foodquest-more/index-foodquest.html" class="arrow-button">
-                    <span class="arrow">more &rarr;</span>
-                </a>
-            </div>
-            <div class="main-content">
-                <div class="content-block">
-                    <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-1.png" alt="App screens">
-                    </div>
-
-                    <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-2.png" alt="App notification">
-                    </div>
-
-                    <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-3.png" alt="Landing page">
-                    </div>
-
-                    <div class="img-column">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-foodquest/cover-img-foodquest-4.png" alt="App characters">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-posters">
-            <div class="sidebar">
-                <div class="sidebar-info-1">
-                    <h1 class="title">Interactive Posters</h1>
-                    <p class="description">Visual concept: Interactive 3D posters for The Animatrix.</p>
-
-                    <div class="tag-block">
-                        <p class="tag">3D posters</p>
-                        <p class="tag">Website</p>
-                    </div>                    
-                </div>
-
-                <a href="posters-more/index-posters.html" class="arrow-button">
-                    <span class="arrow">more &rarr;</span>
+                <a href="" class="no-click-button">
+                    <div class="arrow">in process</div>
                 </a>
             </div>
             <div class="main-content">
                 <div class="content-block">
                     <div class="img-column img-width">
-                        <video id="myVideo" controls loop style="width: 100%;">
-                            <source src="assets/page-main/video/Animation-animatrix.mp4" type="video/mp4">
+                        <video class="auto-play-video" loop style="width: 100%;" preload="auto">
+                            <source src="assets/page-main/video/logistics-animation.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-longread">
+        <div class="container foodquest">
             <div class="sidebar">
                 <div class="sidebar-info-1">
-                    <h1 class="title">Guide how to survive in the Middle Ages</h1>
-                    <p class="description">Long-Read of an alien&rsquo;s journey through the Middle Ages.</p>
+                    <a href="https://foodquest.framer.ai/" id="foodquest">
+                        <h1 class="title">Foodquest</h1>
+                    </a>
+                    <p class="description">Designing the brand identity for a gamified app that brings people together through food and friendship.</p>
 
                     <div class="tag-block">
-                        <p class="tag">3D character</p>
-                        <p class="tag">Long-Read</p>
+                        <p class="tag">Branding</p>
+                        <p class="tag">UI/UX</p>
+                        <p class="tag">Web</p>
+                        <p class="tag">App</p>
+                    </div>                    
+                </div>
+
+                <a href="foodquest-more/index-foodquest.html" class="arrow-button">
+                    <div class="arrow">more</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="content-block">
+                    <div class="img-column img-width">
+                        <video class="auto-play-video" loop style="width: 100%;" preload="auto">
+                            <source src="assets/page-main/video/foodquest-animation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container longread">
+            <div class="sidebar">
+                <div class="sidebar-info-1">
+                    <h1 class="title">How to survive in the Middle Ages</h1>
+                    <p class="description">A long-read web guide following an alien’s journey through the Middle Ages.</p>
+
+                    <div class="tag-block">
+                        <p class="tag">Web</p>
+                        <p class="tag">3D</p>
                     </div>                    
                 </div>
 
                 <a href="longread-more/index-longread.html" class="arrow-button">
-                    <span class="arrow">more &rarr;</span>
+                    <div class="arrow">more</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </a>
             </div>
             <div class="main-content">
-                <div class="content-block-guide">
-                    <div class="img-block">
-                        <div class="img-column">
-                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-1.png" alt="3D alien cover">
-                        </div>
-
-                        <div class="img-column">
-                            <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-2.png" alt="3D alien variations">
-                        </div>
+                <div class="content-block">
+                    <div class="img-column img-width">
+                        <video class="auto-play-video" loop style="width: 100%;" preload="auto">
+                            <source src="assets/page-main/video/medieval-animation.mp4" type="video/mp4">
+                        </video>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="img-column img-height">
-                        <img decoding="async" loading="lazy" class="image" src="assets/page-main/img/project-longread-guide/cover-img-guide-3.png" alt="Landing page">
+        <div class="container max">
+            <div class="sidebar">
+                <div class="sidebar-info-1">
+                    <h1 class="title">MAX</h1>
+                    <p class="description">Branding for a new residential complex in Tyumen, born from the collaboration of two leading development companies—Точно and Творчество.</p>
+
+                    <div class="tag-block">
+                        <p class="tag">Branding</p>
+                    </div>                    
+                </div>
+
+                <a href="max-more/index-max.html" class="arrow-button">
+                    <div class="arrow">more</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="content-block">
+                    <div class="img-column img-width">
+                        <video class="auto-play-video" loop style="width: 100%;" preload="auto">
+                            <source src="assets/page-main/video/max-animation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container posters">
+            <div class="sidebar">
+                <div class="sidebar-info-1">
+                    <h1 class="title">Animatrix</h1>
+                    <p class="description">Interactive 3D posters concept inspired by The Animatrix.</p>
+
+                    <div class="tag-block">
+                        <p class="tag">Web</p>
+                        <p class="tag">3D</p>
+                    </div>                    
+                </div>
+
+                <a href="posters-more/index-posters.html" class="arrow-button">
+                    <div class="arrow">more</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="content-block">
+                    <div class="img-column img-width">
+                        <video class="auto-play-video" loop style="width: 100%;" preload="auto">
+                            <source src="assets/page-main/video/animatrix-animation.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
