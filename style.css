@@ -104,6 +104,10 @@ video {
     align-items: center;
 }
 
+.container.kan-truckt {
+  display: none;
+}
+
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
