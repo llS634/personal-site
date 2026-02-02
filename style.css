@@ -104,10 +104,6 @@ video {
     align-items: center;
 }
 
-.container.kan-truckt {
-  display: none;
-}
-
 /* Header ------------------------------------------------------------------------------------*/
 .header {
     position: fixed;
@@ -297,8 +293,7 @@ video {
     margin: 20px;
 }
 
-#foodquest {
-    color: #160D0A;
+#link-hover {
     margin-bottom: 20px;
     font-size: 42px;  
     line-height: 110%;
@@ -306,7 +301,7 @@ video {
     font-family: "Source Code Pro", monospace;
 }
 
-#foodquest:hover {
+#link-hover:hover {
     color: #999691;
     transition: border 0.3s;
 }
